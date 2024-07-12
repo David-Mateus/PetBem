@@ -18,7 +18,7 @@ import android.util.Base64
 
 class MainActivity : AppCompatActivity() {
     private var petId: Int = 0
-    private lateinit var namePetCardView: TextView
+//    private lateinit var namePetCardView: TextView
     private lateinit var idPet: TextView // id
     private lateinit var namePet: TextView // name
     private lateinit var agePet: TextView // age
@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var nameMedicinesPet: TextView // nameMedicines
     private lateinit var startMedicinesPet: TextView // startMedicines
     private lateinit var endMedicinesPet: TextView // endMedicines
+
 
     //  private lateinit var photoPetImg : CircleImageView
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         petId = intent.getIntExtra("petId", 0)
         Log.d("PetId-MainActity1", "$petId")
         loadPetDetailsMainActivity(petId)
-        namePetCardView = findViewById(R.id.name_pet)
+//        namePetCardView = findViewById(R.id.name_pet)
         idPet = findViewById(R.id.id_pet)
         namePet = findViewById(R.id.name_pet_remmeber)
         agePet = findViewById(R.id.age_pet)
@@ -78,7 +79,8 @@ class MainActivity : AppCompatActivity() {
             }
             Handler(Looper.getMainLooper()).post {
 //              photoPetImg.setImageBitmap(bitmap)
-                namePetCardView.text = pets.namePet
+
+//                namePetCardView.text = pets.namePet
                 idPet.text = pets.id.toString()
                 namePet.text = pets.namePet
                 agePet.text = pets.agePet
