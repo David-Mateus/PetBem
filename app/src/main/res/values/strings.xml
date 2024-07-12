@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">PetBem</string>
+    <string name="logo_do_aplicativo_petbem_description">Logo do Aplicativo PetBem</string>
+    <string name="title_login_and_register">Bem-vindo ao PetBem</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="senha">Senha</string>
+    <string name="login_btn">Entrar</string>
+    <string name="nao_tem_conta">Não tem uma conta</string>
+    <string name="cadastre_se"> CADASTRE-SE</string>
+    <string name="linha_para_separa_texto">linha para separa texto</string>
+    <string name="text_tela_register">Já tem uma conta ?</string>
+    <string name="text_register">Registrar</string>
+    <string name="text_register_login">Login</string>
+    <string name="imagem_de_um_gato_e_um_cachorro_description">imagem de um gato e um cachorro</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_categorias">image categorias</string>
+    <string name="image_resumo">image_resumo</string>
+    <string name="imagem_da_categoria">Imagem da categoria</string>
+    <string name="categoria">Categoria</string>
+    <string name="medicamentos">Medicamentos</string>
+    <string name="vacinas">Vacinas</string>
+    <string name="higiene">Higiene</string>
+    <string name="lembretes">Lembretes</string>
+    <string name="dica1">Banho e Escovação do Pelo</string>
+    <string name="pet_save">Pet cadastrado </string>
+    <string name="excluir">Excluir</string>
+    <string name="editar">Editar</string>
+    <string name="meus_pets">Meus Pets</string>
+    <string name="nenhum_pet_adicionado">Nenhum pet adicionado</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="_12_02_2025">12/02/2025</string>
+    <string name="banho_realizado">Banho Realizado</string>
+    <string name="medicamento">Medicamento</string>
+    <string name="inicio_12_12_12">Inicio: 12/12/12</string>
+    <string name="fim_12_12_12">Fim: 12/12/12</string>
+    <string name="adicionar_medicines">Adicionar</string>
+    <string name="nome_do_pet">Nome do Pet</string>
+    <string name="idade_do_pet">Idade do Pet</string>
+    <string name="ra_a_do_pet">Raça do Pet</string>
+    <string name="adicionar_pet">Adicionar Pet</string>
+    <string name="titulo">Titulo</string>
+    <string name="_12_12_2012">12/12/2012</string>
+    <string name="lembrete">lembrete</string>
+    <string name="adicionar_reminder">Adicionar</string>
+    <string name="nome_da_vacina">Nome da Vacina</string>
+    <string name="id">Id:</string>
+    <string name="nome">Nome:</string>
+    <string name="idade">Idade:</string>
+    <string name="ra_a">Raça:</string>
+    <string name="image_of_pet">image of pet</string>
+    <string name="is_empty">is Empty</string>
+    <string name="image_more">image more</string>
+    <string name="image_profile_of_pet">image profile of pet</string>
+
+</resources>

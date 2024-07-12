@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_app"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/petImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/avatar_pet"
+            android:contentDescription="@string/image_of_pet"
+            />
+
+        <ImageButton
+            android:id="@+id/selectImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@drawable/baseline_photo_camera_24"
+            android:contentDescription="@string/image_profile_of_pet" />
+
+
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/petNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:maxLength="10"
+        android:hint="@string/nome_do_pet" />
+
+    <EditText
+        android:id="@+id/petAgeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="@string/idade_do_pet"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/petBreedInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="@string/ra_a_do_pet" />
+
+    <Button
+        android:id="@+id/addPetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins"
+        android:backgroundTint="@color/bacground_edit_text"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/adicionar_pet" />
+</LinearLayout>

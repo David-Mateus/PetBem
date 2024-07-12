@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/list_linear_layout_vaccine"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardview_vaccine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/bacground_edit_text">
+
+            <TextView
+                android:id="@+id/title_vaccine"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/poppins"
+                android:maxLength="15"
+                android:layout_marginTop="6dp"
+                android:text="Titulo"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/card_menu_vaccine"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/data_vaccine"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:maxLength="15"
+                android:text="Data"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/card_menu_vaccine"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/title_vaccine" />
+
+            <ImageButton
+                android:id="@+id/card_menu_vaccine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/image_more"
+                android:src="@drawable/more_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/background_vacinas"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                android:orientation="horizontal" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

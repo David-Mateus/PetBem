@@ -1,0 +1,61 @@
+<!-- activity_add_pet.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_app"
+    android:padding="16dp">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/lembrete"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/reminder_title_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/titulo" />
+
+    <EditText
+        android:id="@+id/reminder_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/_12_12_2012"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/reminder_text_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="top|start"
+        android:hint="@string/lembrete"
+        android:inputType="textMultiLine"
+        android:minLines="10"
+        android:maxLength="20"
+        android:scrollbars="vertical" />
+
+
+    <Button
+        android:id="@+id/reminder_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/background_reminder"
+        android:fontFamily="@font/poppins"
+        android:text="@string/adicionar_reminder" />
+</LinearLayout>

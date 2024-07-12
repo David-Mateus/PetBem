@@ -1,0 +1,56 @@
+<!-- activity_add_pet.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_app"
+    android:padding="16dp">
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/medicamentos"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/medicines_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="@string/medicamento" />
+
+    <EditText
+        android:id="@+id/medicines_first_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:inputType="date"
+        android:hint="@string/inicio_12_12_12" />
+
+    <EditText
+        android:id="@+id/medicines_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:inputType="date"
+        android:hint="@string/fim_12_12_12" />
+
+    <Button
+        android:id="@+id/addMedicinesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/background_medicamentos"
+        android:text="@string/adicionar_medicines" />
+</LinearLayout>

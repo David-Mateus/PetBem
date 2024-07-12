@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/list_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/card_view"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/bacground_edit_text"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/icon_pet_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/imagem_de_um_gato_e_um_cachorro_description"
+                android:src="@drawable/pet_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/text_name_pet"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:maxLength="15"
+                android:paddingStart="4dp"
+
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon_pet_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/card_menu_pet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/image_more"
+
+                android:src="@drawable/more_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/bacground_edit_text"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

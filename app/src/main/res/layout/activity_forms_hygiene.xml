@@ -1,0 +1,47 @@
+<!-- activity_add_pet.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_app"
+    android:padding="16dp">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/higiene"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/higiene_Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="@string/banho_realizado"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/higiene_date_Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:hint="@string/_12_02_2025"
+        android:inputType="date" />
+
+
+
+    <Button
+        android:id="@+id/add_higiene_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/background_hygiene_ry"
+        android:text="@string/adicionar" />
+</LinearLayout>
